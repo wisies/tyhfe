@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yar
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yar
+  template:
+    metadata:
+      labels:
+        app: yar
+    spec:
+      containers:
+      - image: okteto.dev/yar:latest
+        name: yar
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "59eb403b-f490-4690-94e7-c6789b30cb78"
+        - name: Vless_Path
+          value: "/verftgddfyhjuiko"
+        - name: Vmess_UUID
+          value: "59eb403b-f490-4690-94e7-c6789b30cb78"
+        - name: Vmess_Path
+          value: "/verftgddfyhjuiko"
+        - name: Share_Path
+          value: "/v2link"
