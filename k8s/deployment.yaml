@@ -25,10 +25,10 @@ spec:
         - name: Vless_UUID
           value: "59eb403b-f490-4690-94e7-c6789b30cb78"
         - name: Vless_Path
-          value: "/verftgddfyhjuiko"
+          value: "/vlrftgddfyhjuiko"
         - name: Vmess_UUID
           value: "59eb403b-f490-4690-94e7-c6789b30cb78"
         - name: Vmess_Path
-          value: "/verftgddfyhjuiko"
+          value: "/vmrftgddfyhjuiko"
         - name: Share_Path
           value: "/v2link"
